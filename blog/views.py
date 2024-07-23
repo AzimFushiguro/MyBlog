@@ -5,7 +5,7 @@ from django.db.models import Q
 # Create your views here.
 def main_page(request):
     posts = Post.objects.all()
-    categories = Category.objects.all()
+    categ   ories = Category.objects.all()
     
     text = request.GET.get("search", None)
     category = request.GET.get("cat", None)
